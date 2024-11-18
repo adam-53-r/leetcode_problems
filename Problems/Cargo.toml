@@ -1,0 +1,21 @@
+[package]
+name = "Problems"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[[bin]]
+name = "Problem_859"
+path = "src/Problem_859.rs"
+
+[[bin]]
+name = "Problem_863"
+path = "src/Problem_863.rs"
+
+[[bin]]
+name = "Problem_100"
+path = "src/Problem_100.rs"
