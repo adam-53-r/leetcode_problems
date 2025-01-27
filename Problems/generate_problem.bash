@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ $# -ne 1 ]
   then
@@ -8,7 +8,7 @@ fi
 
 
 (touch "src/Problem_$1.rs" &&
-echo -e 'struct Solution {}\n\n\n\nfn main() {
+echo -e 'struct Solution {}\n\nimpl Solution {\n\n}\n\n\nfn main() {
     println!("{}", Solution::);
 }' >> "src/Problem_$1.rs" ) &&
 echo -e "\n[[bin]]
